@@ -7,6 +7,7 @@
 <p align="center"><b>Make an agent prove its claims with checks it was not allowed to write.</b></p>
 
 <p align="center">
+  <a href="https://pypi.org/project/precheck/"><img alt="PyPI" src="https://img.shields.io/pypi/v/precheck"></a>
   <a href="https://github.com/simin-yuan/precheck/actions/workflows/tests.yml"><img alt="tests" src="https://github.com/simin-yuan/precheck/actions/workflows/tests.yml/badge.svg"></a>
   <img alt="license" src="https://img.shields.io/badge/license-MIT-blue">
   <img alt="python" src="https://img.shields.io/badge/python-3.8%2B-blue">
@@ -69,19 +70,21 @@ the failure mode this tool exists for.
 
 ## Install
 
-Not on PyPI yet. Two ways to use it today, both of which work right now:
+On PyPI:
 
 ```
-# install straight from the repository
-pip install git+https://github.com/simin-yuan/precheck.git
-
-# or run it in place -- it is pure standard library, no install needed
-git clone https://github.com/simin-yuan/precheck
-cd precheck && python demo.py
+pip install precheck
 ```
 
 Zero runtime dependencies, standard library only, no network calls.
 Python 3.8+.
+
+Or run it in place — no install needed:
+
+```
+git clone https://github.com/simin-yuan/precheck
+cd precheck && python demo.py
+```
 
 ## Use it
 

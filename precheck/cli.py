@@ -123,10 +123,17 @@ def cmd_audit(args):
             print("      the check still exited 0")
         print("\nThis is a question list, not a bug list. Some survivors are "
               "legitimate.")
+    elif res["examined"] == 0:
+        # A run that applied no mutation cannot have caught anything. Saying
+        # "every mutation was caught" here would be this project's own bug:
+        # a green line produced by a check that was never exercised.
+        print("\nNothing was audited: no mutation could be applied, so this "
+              "run proves nothing either way.")
+        print("Fix the artefacts listed above, then run it again.")
     else:
         print("every mutation was caught by its check.")
     print("(seq=%s)" % entry["seq"])
-    if args.strict and res["escaped"]:
+    if args.strict and (res["escaped"] or res["examined"] == 0):
         return 3
     return 0
 
