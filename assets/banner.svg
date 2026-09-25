@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="300" viewBox="0 0 1280 300" role="img" aria-label="precheck">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#161b22"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="300" rx="18" fill="url(#g)"/>
+  <g opacity="0.9">
+    <rect x="96" y="86" width="76" height="76" rx="14" fill="none" stroke="#3fb950" stroke-width="4"/>
+    <path d="M114 124 l14 15 l28 -32" fill="none" stroke="#3fb950" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="200" y="130" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="58" font-weight="700" fill="#e6edf3">precheck</text>
+  <text x="200" y="176" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="25" fill="#8b949e">the check is frozen before the run,</text>
+  <text x="200" y="210" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="25" fill="#8b949e">then asked whether it could ever fail</text>
+  <text x="200" y="252" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="20" fill="#3fb950">  19 tests pass  ·  0 dependencies  ·  no network</text>
+  <circle cx="1186" cy="150" r="46" fill="none" stroke="#d29922" stroke-width="4" opacity="0.75"/>
+  <text x="1186" y="168" text-anchor="middle" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="52" font-weight="700" fill="#d29922" opacity="0.9">?</text>
+</svg>

@@ -1,0 +1,5 @@
+{
+  "service": "checkout",
+  "replicas": 3,
+  "timeout_seconds": 30
+}

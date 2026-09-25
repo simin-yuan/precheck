@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# NB: do NOT ignore .precheck/ -- the ledger is the evidence. Committing it is
+# the whole point: a reader can re-run `precheck verify` and check the history
+# was never edited.

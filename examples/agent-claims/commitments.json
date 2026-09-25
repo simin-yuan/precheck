@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "note": "Written and frozen BEFORE the agent's work was accepted. The agent does not get to edit this afterwards.",
+  "commitments": [
+    {
+      "id": "C1",
+      "statement": "the deployment config is valid and safe to ship",
+      "check": "python check_config.py",
+      "artifacts": ["config.json"]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "precheck"
+version = "0.1.0"
+description = "Make an agent prove its claims with checks it was not allowed to write. The check is frozen before the run, and audited for the ability to fail at all."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Simin Yuan" }]
+keywords = [
+  "agents",
+  "ai-agents",
+  "verification",
+  "audit",
+  "mutation-testing",
+  "llm",
+  "ci",
+  "trust",
+  "evidence",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development :: Quality Assurance",
+  "Topic :: Software Development :: Testing",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/simin-yuan/precheck"
+Issues = "https://github.com/simin-yuan/precheck/issues"
+
+[project.scripts]
+precheck = "precheck.cli:main"
+
+[tool.setuptools]
+packages = ["precheck"]
