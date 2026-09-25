@@ -69,8 +69,15 @@ the failure mode this tool exists for.
 
 ## Install
 
+Not on PyPI yet. Two ways to use it today, both of which work right now:
+
 ```
-pip install precheck
+# install straight from the repository
+pip install git+https://github.com/simin-yuan/precheck.git
+
+# or run it in place -- it is pure standard library, no install needed
+git clone https://github.com/simin-yuan/precheck
+cd precheck && python demo.py
 ```
 
 Zero runtime dependencies, standard library only, no network calls.
@@ -93,6 +100,23 @@ precheck verify        # walk the hash chain; detect edited history
 `settle` exits `2` on any failure. `audit --strict` exits `3` if a check survived
 a mutation. `verify` exits `1` if the chain is broken. All three drop straight
 into CI.
+
+### As a GitHub Action
+
+```yaml
+jobs:
+  verify-the-agent:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: simin-yuan/precheck@main
+        with:
+          command: audit     # settle, then mutate and re-run
+          strict: "true"     # fail the job if a check could not fail
+```
+
+Put `precheck register` in the job *before* the step that produces the artifact.
+A check frozen after the fact is reported as `NOT_REGISTERED`, and `verify` fails.
 
 ### The commitments file
 

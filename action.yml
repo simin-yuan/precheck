@@ -1,0 +1,51 @@
+name: "precheck"
+description: "Run the frozen checks, audit them for the ability to fail, and verify the ledger. Fails the job when a check cannot fail."
+author: "Simin Yuan"
+branding:
+  icon: "check-circle"
+  color: "green"
+
+inputs:
+  command:
+    description: "One of: settle, audit, verify, status"
+    required: false
+    default: "settle"
+  root:
+    description: "Repository root that holds .precheck/"
+    required: false
+    default: "."
+  strict:
+    description: "For `audit`: fail the job if any check survived a mutation"
+    required: false
+    default: "true"
+  seed:
+    description: "For `audit`: mutation seed, so survivors are reproducible"
+    required: false
+    default: "0"
+  python-version:
+    description: "Python used to run precheck itself"
+    required: false
+    default: "3.11"
+
+runs:
+  using: "composite"
+  steps:
+    - uses: actions/setup-python@v5
+      with:
+        python-version: ${{ inputs.python-version }}
+    - shell: bash
+      env:
+        PRECHECK_ROOT: ${{ inputs.root }}
+        PRECHECK_STRICT: ${{ inputs.strict }}
+        PRECHECK_SEED: ${{ inputs.seed }}
+      run: |
+        set -euo pipefail
+        extra=""
+        if [ "$PRECHECK_STRICT" = "true" ]; then extra="--strict"; fi
+        case "${{ inputs.command }}" in
+          settle)  python -m precheck --root "$PRECHECK_ROOT" settle ;;
+          audit)   python -m precheck --root "$PRECHECK_ROOT" audit --seed "$PRECHECK_SEED" $extra ;;
+          verify)  python -m precheck --root "$PRECHECK_ROOT" verify ;;
+          status)  python -m precheck --root "$PRECHECK_ROOT" status ;;
+          *) echo "unknown command: ${{ inputs.command }}" >&2; exit 1 ;;
+        esac
