@@ -9,7 +9,7 @@
 <p align="center">
   <a href="https://pypi.org/project/precheck/"><img alt="PyPI" src="https://img.shields.io/pypi/v/precheck"></a>
   <a href="https://github.com/simin-yuan/precheck/actions/workflows/tests.yml"><img alt="tests" src="https://github.com/simin-yuan/precheck/actions/workflows/tests.yml/badge.svg"></a>
-  <img alt="license" src="https://img.shields.io/badge/license-MIT-blue">
+  <img alt="license" src="https://img.shields.io/badge/license-All%20Rights%20Reserved-red">
   <img alt="python" src="https://img.shields.io/badge/python-3.8%2B-blue">
   <img alt="dependencies" src="https://img.shields.io/badge/dependencies-0-brightgreen">
   <img alt="network" src="https://img.shields.io/badge/network-none-lightgrey">
@@ -206,5 +206,5 @@ the output less trustworthy, not more.
 
 ## License
 
-MIT © 2026 Simin Yuan
+All Rights Reserved © 2026 Simin Yuan
 
