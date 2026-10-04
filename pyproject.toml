@@ -8,7 +8,7 @@ version = "0.1.1"
 description = "Make an agent prove its claims with checks it was not allowed to write. The check is frozen before the run, and audited for the ability to fail at all."
 readme = "README.md"
 requires-python = ">=3.8"
-license = { text = "MIT" }
+license = { text = "Proprietary - All Rights Reserved" }
 authors = [{ name = "Simin Yuan" }]
 keywords = [
   "agents",
@@ -24,7 +24,6 @@ keywords = [
 classifiers = [
   "Development Status :: 3 - Alpha",
   "Intended Audience :: Developers",
-  "License :: OSI Approved :: MIT License",
   "Programming Language :: Python :: 3",
   "Topic :: Software Development :: Quality Assurance",
   "Topic :: Software Development :: Testing",
