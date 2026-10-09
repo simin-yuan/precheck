@@ -204,6 +204,14 @@ end-to-end demo; no dependencies. The audit's mutation set is deliberately small
 and readable — adding mutations that you cannot explain to a reader would make
 the output less trustworthy, not more.
 
+## Related tools
+
+Small, falsifiable verification tools that fit together:
+
+- **[greencheck](https://github.com/simin-yuan/greencheck)** — does your validator actually reject bad input? mutation testing for validators.
+- **[agent-pushgate](https://github.com/simin-yuan/agent-pushgate)** — pre-push privacy / scope / history gates.
+- **[self-auditing-agent](https://github.com/simin-yuan/self-auditing-agent)** — an agent auditing its own workflow: case studies, an archive, and a repro harness.
+
 ## License
 
 MIT © 2026 Simin Yuan — see [`LICENSE`](LICENSE).
