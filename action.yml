@@ -1,6 +1,6 @@
 name: "precheck"
 description: "Run the frozen checks, audit them for the ability to fail, and verify the ledger. Fails the job when a check cannot fail."
-author: "Simin Yuan"
+author: "Simin (Simon) Yuan"
 branding:
   icon: "check-circle"
   color: "green"

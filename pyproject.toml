@@ -9,7 +9,7 @@ description = "Make an agent prove its claims with checks it was not allowed to 
 readme = "README.md"
 requires-python = ">=3.8"
 license = { text = "MIT" }
-authors = [{ name = "Simin Yuan" }]
+authors = [{ name = "Simin (Simon) Yuan" }]
 keywords = [
   "agents",
   "ai-agents",
@@ -31,6 +31,7 @@ classifiers = [
 dependencies = []
 
 [project.urls]
+ORCID = "https://orcid.org/0009-0002-6843-3390"
 Homepage = "https://github.com/simin-yuan/precheck"
 Issues = "https://github.com/simin-yuan/precheck/issues"
 
