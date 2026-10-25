@@ -9,7 +9,7 @@ description = "Make an agent prove its claims with checks it was not allowed to 
 readme = "README.md"
 requires-python = ">=3.8"
 license = { text = "MIT" }
-authors = [{ name = "Simin (Simon) Yuan" }]
+authors = [{ name = "Simin Yuan" }]
 keywords = [
   "agents",
   "ai-agents",

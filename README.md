@@ -214,5 +214,5 @@ Small, falsifiable verification tools that fit together:
 
 ## License
 
-MIT © 2026 Simin (Simon) Yuan — ORCID [0009-0002-6843-3390](https://orcid.org/0009-0002-6843-3390) · [github.com/simin-yuan](https://github.com/simin-yuan). See [`LICENSE`](LICENSE).
+MIT © 2026 Simin Yuan — ORCID [0009-0002-6843-3390](https://orcid.org/0009-0002-6843-3390) · [github.com/simin-yuan](https://github.com/simin-yuan). See [`LICENSE`](LICENSE).
 
